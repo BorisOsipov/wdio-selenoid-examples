@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "outDir": "./build",
+    "types": [
+      "node",
+      "webdriverio/async",
+      "@wdio/mocha-framework",
+      "expect-webdriverio"
+    ],
+    "inlineSourceMap": true,
+    "target" : "es2019"
+  },
+  "include": ["./specs/**/*.ts"]
+}
