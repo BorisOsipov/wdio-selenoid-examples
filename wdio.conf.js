@@ -23,8 +23,4 @@ exports.config = {
     beforeSession: function () {
         require('expect-webdriverio')
     },
-    before: function () {
-        // emulate selenium grid 4 behavior :D
-        browser.capabilities["se:options"] = {cdp: `ws://localhost:4444/devtools/${browser.sessionId}`}
-    }
 }
